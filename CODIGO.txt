@@ -1,0 +1,36 @@
+using System;
+
+public class Estudante
+{
+    public string Nome;
+    public int Idade;
+    public string RA;
+
+    // Construtor para inicializar os campos
+    public Estudante(string nome, int idade, string ra)
+    {
+        Nome = nome;
+        Idade = idade;
+        RA = ra;
+    }
+
+    // Método para exibir informações do estudante
+    public void ExibirInformacoes()
+    {
+        Console.WriteLine("Nome: " + Nome);
+        Console.WriteLine("Idade: " + Idade);
+        Console.WriteLine("RA: " + RA);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Exemplo de uso da classe Estudante
+        Estudante estudante1 = new Estudante("Gustavo", 19, "G8460B3");
+        estudante1.ExibirInformacoes();
+    }
+}
+
+
